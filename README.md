@@ -2,7 +2,7 @@
 
 # 🛒 E-Commerce Microservices Platform
 
-A distributed e-commerce application built with Spring Boot microservices architecture, demonstrating modern enterprise patterns and best practices.
+A distributed e-commerce application built with Spring Boot microservices architecture.
 
 ## 🏗️ Architecture Overview
 
@@ -134,8 +134,8 @@ spring.jpa.show-sql=true
 
 # Server Port (different for each service)
 server.port=8081  # User Service
-server.port=8082  # Product Service
-server.port=8083  # Order Service
+server.port=8083  # Product Service
+server.port=8082  # Order Service
 ```
 
 ### 4. Build and Run
