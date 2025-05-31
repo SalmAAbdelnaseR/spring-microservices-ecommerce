@@ -31,19 +31,18 @@ This application is built using a microservices architecture pattern with three 
 ### User Service
 - User registration
 -Get User By ID
--Get User's Order 
+-Get User Orders 
 
 ### Product Service
-- Product catalog management
-- Category management
-- Inventory tracking
-- Product search and filtering
+- Add Product
+- Get Product By ID
+- Get All Products
 
 ### Order Service
-- Shopping cart functionality
-- Order creation and management
-- Order status tracking
-- Integration with User and Product services
+-Create Order 
+-Get Order By Id
+-Get Order By UserId
+-Get Product By Order
 
 ## 🛠️ Technology Stack
 
@@ -104,21 +103,14 @@ ecommerce-microservices/
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+###  Clone the Repository
 ```bash
-git clone https://github.com/yourusername/ecommerce-microservices-spring.git
-cd ecommerce-microservices-spring
+git clone Repo Url
+cd spring-microservices-ecommerce
 ```
 
-### 2. Database Setup (Optional)
-For MySQL:
-```sql
-CREATE DATABASE user_service_db;
-CREATE DATABASE product_service_db;
-CREATE DATABASE order_service_db;
-```
 
-### 3. Configuration
+###  Configuration
 Update `application.properties` in each service:
 
 ```properties
@@ -137,7 +129,7 @@ server.port=8083  # Product Service
 server.port=8082  # Order Service
 ```
 
-### 4. Build and Run
+###  Build and Run
 
  Run Individual Services
 
