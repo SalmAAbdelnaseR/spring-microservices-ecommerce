@@ -27,7 +27,7 @@ public class OrderController {
     // {
     // "userId":1,
     // "productId" : 1,
-    // "quantity": 3
+    // "quantity": 2
     // }
     @PostMapping
     public ResponseEntity<OrderDto> createOrder(@RequestBody OrderDto dto) {
