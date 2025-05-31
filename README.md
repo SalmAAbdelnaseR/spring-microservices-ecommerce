@@ -29,10 +29,9 @@ This application is built using a microservices architecture pattern with three 
 ## 🚀 Features
 
 ### User Service
-- User registration and authentication
-- Profile management
-- User role management
-- Account verification
+- User registration
+-Get User By ID
+-Get User's Order 
 
 ### Product Service
 - Product catalog management
