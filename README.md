@@ -30,7 +30,9 @@ This application is built using a microservices architecture pattern with three 
 
 ### User Service
 - User registration
+  
 -Get User By ID
+
 -Get User Orders 
 
 ### Product Service
@@ -40,8 +42,11 @@ This application is built using a microservices architecture pattern with three 
 
 ### Order Service
 -Create Order 
+
 -Get Order By Id
+
 -Get Order By UserId
+
 -Get Product By Order
 
 ## 🛠️ Technology Stack
@@ -115,9 +120,9 @@ Update `application.properties` in each service:
 
 ```properties
 # Database Configuration
-spring.datasource.url=jdbc:mysql://localhost:3306/service_db
-spring.datasource.username=your_username
-spring.datasource.password=your_password
+spring.datasource.url=jdbc:mysql://localhost:3306/springcloud
+spring.datasource.username=root
+spring.datasource.password=root
 
 # JPA Configuration
 spring.jpa.hibernate.ddl-auto=update
@@ -144,51 +149,6 @@ mvn spring-boot:run
 # Terminal 3 - Order Service
 cd order-service
 mvn spring-boot:run
-```
-
-## 📡 API Endpoints
-
-### User Service (Port: 8081)
-```
-GET    /api/users              - Get all users
-GET    /api/users/{id}         - Get user by ID
-POST   /api/users              - Create new user
-PUT    /api/users/{id}         - Update user
-DELETE /api/users/{id}         - Delete user
-POST   /api/users/login        - User authentication
-```
-
-### Product Service (Port: 8082)
-```
-GET    /api/products           - Get all products
-GET    /api/products/{id}      - Get product by ID
-POST   /api/products           - Create new product
-PUT    /api/products/{id}      - Update product
-DELETE /api/products/{id}      - Delete product
-GET    /api/products/category/{category} - Get products by category
-```
-
-### Order Service (Port: 8083)
-```
-GET    /api/orders             - Get all orders
-GET    /api/orders/{id}        - Get order by ID
-POST   /api/orders             - Create new order
-PUT    /api/orders/{id}        - Update order status
-GET    /api/orders/user/{userId} - Get orders by user
-```
-
-
-
-## 🎯 Key Design Patterns Implemented
-
-- **Microservices Architecture**: Loosely coupled, independently deployable services
-- **Repository Pattern**: Data access abstraction using Spring Data JPA
-- **DTO Pattern**: Data transfer objects for API communication
-- **Mapper Pattern**: Object mapping using MapStruct
-- **RESTful API Design**: Standard HTTP methods and status codes
-- **Separation of Concerns**: Clear layered architecture
-
-
 
 
 
